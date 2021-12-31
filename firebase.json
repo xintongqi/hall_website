@@ -1,0 +1,9 @@
+{
+  "firebase": "csk-hall",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

@@ -1,0 +1,30 @@
+Rewriteengine on
+
+# Remove www. from URL on http protocol
+RewriteCond %{HTTPS} off
+Rewritecond %{HTTP_HOST} ^www\.(.+)$ [NC]
+Rewriterule ^(.*)$ http://%1%{REQUEST_URI} [R=301,NE,L]
+
+# Remove www. from URL on https protocol
+RewriteCond %{HTTPS} on
+Rewritecond %{HTTP_HOST} ^www\.(.+)$ [NC]
+Rewriterule ^(.*)$ https://%1%{REQUEST_URI} [R=301,NE,L]
+
+# Map /Admin to index.php?SMExt=SMLogin for easy access
+RewriteRule ^admin$ index.php?SMExt=SMLogin [NC,L]
+
+# Remove index.html from URL
+RewriteCond %{REQUEST_URI} ^(.*/)index\.html$ [NC]
+RewriteRule . %1 [R=301,NE,L]
+
+# Remove index.php from URL (only if no args are passed in query string,
+# and if data has not been posted back to server - POST data is lost
+# when redirecting).
+RewriteCond %{QUERY_STRING} ^$
+RewriteCond %{REQUEST_URI} ^(.*/)index\.php$ [NC]
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteRule . %1 [R=301,NE,L]
+
+# SEO frindly URLs
+RewriteRule ^([A-Za-z0-9_\.-]+)\.html$ index.php?SMExt=SMPages&SMPagesFilename=$1 [L]
+RewriteRule ^([A-Za-z0-9_\.-]+)\.htm$ index.php?SMExt=SMPages&SMPagesId=$1 [L]

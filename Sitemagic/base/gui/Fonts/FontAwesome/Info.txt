@@ -1,0 +1,2 @@
+Font Awesome 4.3.0
+http://fontawesome.io/
