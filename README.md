@@ -13,7 +13,7 @@ Please visit the website at https://www7.cityu.edu.hk/sro/hall5/
 <br/><br/>
 
 Notes:
-1. The website belongs to City University of Hong Kong. PLEASE DON'T USE ANY OF IT WITHOUT PERMISSION.
+1. The website belongs to City University of Hong Kong. It's now outdated so use the template if you want, just don't spread the info.
 2. Multimedia files are removed.
 <br/><br/>
 <br/><br/>
