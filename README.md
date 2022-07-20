@@ -1,3 +1,11 @@
+# Update 2022/07/20
+I've constructed a much cleaner website for the hall after my retirement. Yes man, *after* the retirement.
+
+The code would soon be published at another repo. Whoever goes next, you are welcome. And still, good luck :)
+<br/><br/>
+<br/><br/>
+
+# Original Readme
 This is the source code for the official website of Chan Sui Kau Hall (Hall 5), Student Residence of City University of Hong Kong.
 
 Please visit the website at https://www7.cityu.edu.hk/sro/hall5/
